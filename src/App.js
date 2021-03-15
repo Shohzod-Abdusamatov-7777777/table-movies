@@ -29,6 +29,7 @@ function App() {
         handleLiked={handleLiked}
       />
     <GitChange/>
+    <h2>hello from git</h2>
     </div>
   );
 }
