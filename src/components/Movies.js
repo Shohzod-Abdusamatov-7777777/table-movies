@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Pagination from "./common/Pagination";
 import ListGroup from "./common/ListGroup";
 import { getGenres } from "../services/fakeGenreService";
