@@ -2,7 +2,6 @@ import { getMovies } from "./services/fakeMovieService";
 import { useState } from "react";
 import "./App.css";
 import Movies from "./components/Movies";
-import GitChange from "./components/common/gitChange";
 
 function App() {
   // get movies from server
@@ -28,8 +27,6 @@ function App() {
         handleDelete={handleDelete}
         handleLiked={handleLiked}
       />
-    <GitChange/>
-    <h2>hello from git</h2>
     </div>
   );
 }
