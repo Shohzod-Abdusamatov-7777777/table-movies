@@ -48,7 +48,7 @@ const Movies = (props) => {
 
   return (
     <React.Fragment>
-      <h3 className="text-center m-2">Showing {filtered.length} items</h3>
+      <h3 className="text-center m-2">Showing {filtered.length} movies items</h3>
       <div className="row">
         <div className="col-2">
           <ListGroup
@@ -60,7 +60,7 @@ const Movies = (props) => {
 
         <div className="col">
           {sorted.length ? (
-            <div className="table-responsive-md">
+            <div className="table-responsive-sm">
               <MoviesTable
                 sorted={sorted}
                 handleDelete={handleDelete}
