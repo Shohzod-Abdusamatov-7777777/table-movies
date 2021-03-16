@@ -19,10 +19,10 @@ const Navbar = () => {
         <NavIcon onClick={handleNavbar}>
           {openNavBar ? <FaTimes /> : <FaBars />}
         </NavIcon>
-        <NavItems openNavBar={openNavBar}>
+        <NavItems openNavBar={openNavBar}  onClick={handleNavbar}>
           <NavItem>
             <NavLink exact to="/movies">
-              Movies <span className="sr-only">(current)</span>
+              Movies 
             </NavLink>
           </NavItem>
           <NavItem>

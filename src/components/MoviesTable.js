@@ -19,10 +19,10 @@ const MoviesTable = (props) => {
   }
 
   return (
-    <div>
+    <div className="table-responsive">
       <table className="table table-bordered table-striped">
         <thead>
-          <tr>
+          <tr style={{whiteSpace:"nowrap"}}>
             <th onClick={() => onSort("title")} className="align-middle">
               Title {renderSortIcon("title")}
             </th>

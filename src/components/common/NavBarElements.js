@@ -56,11 +56,12 @@ export const NavItems = styled.ul`
 
 export const NavItem = styled.li`
   display: flex;
-  background: #ddd;
   margin-left: 1rem;
   font-weight: bolder;
-  font-family: sans-Arial, Helvetica, sans-serif;
-
+  font-family:Helvetica, sans-serif;
+  @media screen and (max-width: 768px) {
+    margin-left:0;
+  }
   & > a {
     color: #111;
     padding: 0.5rem 1rem;
