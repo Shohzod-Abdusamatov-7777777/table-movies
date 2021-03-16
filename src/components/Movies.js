@@ -48,9 +48,9 @@ const Movies = (props) => {
 
   return (
     <React.Fragment>
-      <h3 className="text-center m-2">Showing {filtered.length} movies items</h3>
+      <h3 style={{paddingTop:"60px"}} className="text-center m-2">Showing {filtered.length} movies items</h3>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2 col-md-3 col-sm-6 mb-2">
           <ListGroup
             genres={genres}
             selectedItem={selectedGenre}

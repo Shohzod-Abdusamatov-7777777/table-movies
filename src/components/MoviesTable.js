@@ -1,6 +1,6 @@
 import React from "react";
 import Movie from "./Movie";
-import { FaSortDown, FaSortUp, FaTimes } from "react-icons/fa";
+import { FaSortDown, FaSortUp } from "react-icons/fa";
 
 const MoviesTable = (props) => {
   const {
