@@ -5,6 +5,7 @@ import { FaSortDown, FaSortUp } from "react-icons/fa";
 const MoviesTable = (props) => {
   const {
     sorted,
+    handleEdit,
     handleDelete,
     onSort,
     handleLiked,
@@ -55,6 +56,7 @@ const MoviesTable = (props) => {
                 movie={movie}
                 onDelete={handleDelete}
                 onLiked={handleLiked}
+                onEdit={handleEdit}
               />
             ))}
         </tbody>

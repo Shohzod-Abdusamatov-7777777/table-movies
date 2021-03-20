@@ -3,12 +3,12 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Movie = (props) => {
-  const { movie, onDelete, onLiked } = props;
+  const { movie, onDelete, onLiked,onEdit } = props;
 
   return (
     <tr>
       <td className="align-middle">
-        <Link to={`/movies/${movie._id}`}>{movie.title}</Link>
+        <Link to={`/movies/${movie._id}`} onClick={()=>onEdit(movie)}>{movie.title}</Link>
       </td>
       <td className="align-middle">{movie.genre.name}</td>
       <td className="text-center align-middle">{movie.numberInStock}</td>

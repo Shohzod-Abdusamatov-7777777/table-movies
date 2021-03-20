@@ -1,12 +1,20 @@
-import React from 'react'
+import React from "react";
+import Form from "./common/Form";
+import NewMovie from "./NewMovie";
 
-const MovieForm = ({match,history}) => {
+class MovieForm extends Form {
+  render() {
+    const { match, history, movieEdit, movies,handleSave } = this.props;
     return (
-        <div style={{paddingTop:"60px"}}>
-            <h2 className="display-5">Movie id - {match.params.id}</h2>
-            <button className="btn btn-primary" onClick={()=>{history.replace("/movies")}}>Save</button>
-        </div>
-    )
+      <NewMovie
+        match={match}
+        history={history}
+        movies={movies}
+        movieEdit={movieEdit}
+        handleSave={handleSave}
+      />
+    );
+  }
 }
 
-export default MovieForm
+export default MovieForm;

@@ -8,7 +8,6 @@ const Navbar = () => {
 
   const handleNavbar = () => {
     setOpenNavBar(!openNavBar);
-    console.log("hellpo from handleNavbar");
   };
 
   return (
@@ -30,6 +29,11 @@ const Navbar = () => {
           </NavItem>
           <NavItem>
             <NavLink to="/rentals">Rentals</NavLink>
+          </NavItem> 
+          <NavItem>
+            <NavLink to="/login">Login</NavLink>
+          </NavItem> <NavItem>
+            <NavLink to="/register">Register</NavLink>
           </NavItem>
         </NavItems>
       </NavWrapper>
